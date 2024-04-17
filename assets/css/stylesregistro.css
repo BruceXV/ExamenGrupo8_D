@@ -18,10 +18,10 @@
     background: #4e4d4d;
     margin: auto;
     margin-top: 180px;
-    box-shadow: 7px 13px 37px #000;
+    box-shadow: 7px 13px 37px #cf8383;
     padding: 20px 30px;
     border-top: 4px solid #af0707;
-    color: white;
+    color: rgb(245, 160, 160);
   }
   
   .form-login h5 {
@@ -38,7 +38,7 @@
     border: 1px solid #af0707;
     margin-bottom: 15px;
     padding: 11px 10px;
-    background: #252323;
+    background: #8f2222;
     font-size: 14px;
     font-weight: bold;
   }
@@ -66,4 +66,14 @@
   
   .form-login a:hover {
     text-decoration: underline;
+  }
+  
+  .ingresar{
+    background: #ff0000;
+    margin: auto;
+    margin-top: 160px;
+    box-shadow: 6px 10px 30px #cf8383;
+    padding: 10px 15px;
+    border-top: 2px solid #af0707;
+    color: rgb(27, 151, 54);
   }
