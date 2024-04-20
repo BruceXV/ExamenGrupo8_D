@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-image: url(fondo2.jpg);
+    background-position: center center;
+    background-repeat: no repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  .form-login {
+    width: 500px;
+    height: 450px;
+    background: #4e4d4d;
+    margin: auto;
+    margin-top: 80px;
+    padding: 20px 30px;
+    border-top: 4px solid #af0707;
+    color: rgb(245, 160, 160);
+  }
+  
+  .form-login h5 {
+    margin: 0;
+    text-align: center;
+    height: 40px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid;
+    font-size: 20px;
+  }
+  
+  .controls {
+    width: 100%;
+    border: 1px solid #af0707;
+    margin-bottom: 15px;
+    padding: 11px 10px;
+    background: #8f2222;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .buttons {
+    width: 100%;
+    height: 40px;
+    background: #af0707;
+    border: none;
+    color: white;
+    margin-bottom: 16px;
+  }
+  
+  .form-login p{
+    height: 40px;
+    text-align: center;
+    border-bottom: 1px solid;
+  }
+  
+  .form-login a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .form-login a:hover {
+    text-decoration: underline;
+  }
+  
+  .ingresar{
+    background: #ff0000;
+    margin: auto;
+    margin-top: 160px;
+    padding: 10px 15px;
+    border-top: 2px solid #af0707;
+    color: rgb(27, 151, 54);
+  }
+  
+  .creausuario{
+    text-align: center;
+    color: #af0e0e;
+  }
+
+  .fondo-gris{
+
+    background-color:#3d3d3d;
+    color: rgb(245, 160, 160);
+  }
+
+  .la-imagen{ 
+    margin: auto;
+    border-radius: 5%;
+    width: 200px; 
+    height: 250px; 
+}
