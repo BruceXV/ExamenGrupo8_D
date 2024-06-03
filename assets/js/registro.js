@@ -1,20 +1,29 @@
-//paso 5 registro
-const signupForm = document.querySelector('#signupForm')
-signupForm.addEventListener('submit', (e)=>{
-    e.preventDefault()
-    const name = document.querySelector('#name').value
-    const email = document.querySelector('#email').value
-    const password = document.querySelector('#password').value
+document.getElementById("formRegistro").addEventListener("submit",function(e){
+    e.preventDefault();
 
-    const Users = JSON.parse(localStorage.getItem('users')) || []
-    const isUserRegistered = Users.find(user => user.email === email)
-    if(isUserRegistered){
-        return alert('El usuario ya esta registado!')
+    const rut = document.getElementById("rut").value;
+    const nombre = document.getElementById("nombre").value;
+    const apellido = document.getElementById("apellido").value;
+    const email = document.getElementById("correo").value;
+
+    var validacionRut = /^[0-9]+-[0-9Kk]$/;
+    var validacionEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    let errorMensaje = "";
+
+
+    if (!validacionRut.test(rut)){
+        errorMensaje = "Introduzca RUT valido";
+    }
+    
+    else if (!validacionEmail.test(email)){
+        errorMensaje = "Introduzca Correo valido"
     }
 
-    Users.push({name: name, email: email, password: password})
-    localStorage.setItem('users', JSON.stringify(Users))
-    alert('Registro Exitoso!')
-    window.location.href = 'login.html'
-
-})
+    if (errorMensaje){
+        document.getElementById("error").textContent = errorMensaje;
+    }else{
+        alert("Usuario Registrado Exitosamente");
+        window.location.href = ("login.html");
+    }
+});

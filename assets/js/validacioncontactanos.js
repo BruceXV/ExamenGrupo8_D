@@ -3,15 +3,15 @@ document.getElementById("formLogin").addEventListener("submit",function(e){
 
     const email = document.getElementById("correo").value;
     
-    var validacionEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    var validacionContacto = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    if (validacionEmail.test(email)){
+    if (validacionContacto.test(email)){
         alert("Mensaje enviado con exito")
-        window.location.href = ("paginainicio.html")
+        window.location.href = ("inicio.html")
         
     } else {
         const errorMensaje = document.getElementById("error");
-        errorMensaje.textContent = 'Introduzca un correo valido'
+        errorMensaje.textContent = 'Mensaje no enviado.'
     }
 
 });
