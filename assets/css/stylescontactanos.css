@@ -1,16 +1,16 @@
-body {
+body{
     background-image: url(fondo2.jpg);
     background-position: center center;
     background-repeat: no repeat;
     background-size: cover;
     background-attachment: fixed;
-  }
+}
+
 .container{
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    margin-top: 80px;
 }
 
 .formBox{
