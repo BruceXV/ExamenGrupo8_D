@@ -1,29 +1,23 @@
-document.getElementById("formRegistro").addEventListener("submit",function(e){
-    e.preventDefault();
+document.getElementById('registroForm').addEventListener('submit',function(event){
 
-    const rut = document.getElementById("rut").value;
-    const nombre = document.getElementById("nombre").value;
-    const apellido = document.getElementById("apellido").value;
-    const email = document.getElementById("correo").value;
+    event.preventDefault();
+    const nombre = document.querySelector('#usuario').value;
+    const email = document.querySelector('#correo').value;
+    const contraseña = document.querySelector('#contraseña').value;
 
-    var validacionRut = /^[0-9]+-[0-9Kk]$/;
-    var validacionEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const cuentas = JSON.parse(localStorage.getItem('usuarios')) || [];
+    const ifUsuarioRegistrado = cuentas.find(cuenta => cuenta.email === email);
+    if (ifUsuarioRegistrado){
+        return alert('Ya esta registrado este correo.')
+    } 
+    cuentas.push({nombre : nombre , email : email , contraseña : contraseña, carrito: [] , compras : [] });
+    localStorage.setItem('usuarios',JSON.stringify(cuentas));
+    alert ('Registro exitoso, a disfrutar')
+    window.location.href = 'login.html'
+})
 
-    let errorMensaje = "";
-
-
-    if (!validacionRut.test(rut)){
-        errorMensaje = "Introduzca RUT valido";
-    }
-    
-    else if (!validacionEmail.test(email)){
-        errorMensaje = "Introduzca Correo valido"
-    }
-
-    if (errorMensaje){
-        document.getElementById("error").textContent = errorMensaje;
-    }else{
-        alert("Usuario Registrado Exitosamente");
-        window.location.href = ("login.html");
-    }
-});
+const usuario = JSON.parse(localStorage.getItem('login_success')) || false;
+if (usuario) {
+    alert('Ya has iniciado sesion');
+    window.location.href = 'paginainicio.html';
+}

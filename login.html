@@ -26,13 +26,6 @@
                     <li class="nav-item">
                         <a class="nav-link"  href="./paginainicio.html">Inicio </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./productos.html">Catálogo de juegos</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="./carrodecompras.html">Carro de compras</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="./contactanos.html">Contáctanos</a>
                     </li>
                     <li class="nav-item">
@@ -49,27 +42,28 @@
         </button>
     </div>
 </nav>
-
-
-    <div class="container">
-        <div class="formBox txt">
-            <form id="formLogin">
-                <div class="mb-3">
-                    <label for="correo" class="form-label">Direccion de correo:</label>
-                    <input type="email" class="form-control" id="correo" required>
-                </div>
-                <div class="mb-3">
-                    <label for="contraseña" class="form-label">Contraseña:</label>
-                    <input type="password" class="form-control" id="contraseña" required>
-                </div>
-                <div class="d-flex justify-content-center">
-                    <input type="submit" id="btnIngresar" value="Ingresar" class="boton" href="./productos.html">
-                </div>
-                <br>
-                <p id="error" style=" color: white; text-align: center;"></p>
-            </form>
-        </div>
-    </div>
+<br>
+<br>
+<br>
+<br>
+<div class="container-fluid medio">
+    <div class="row">
+      <form id="loginForm" class="mx-auto col-xs-6 col-sm-6 col-xl-3">
+          <h4 class="text-center">Inicio de sesion</h4>
+          <div class="mb-3 mt-5">
+            <label for="correo" class="form-label"><p>Correo :</p> </label>
+            <input type="text" class="form-control" id="correo" >
+          </div>
+          <div class="mb-3">
+            <label for="correo" class="form-label"><p>Contraseña :</p> </label>
+            <input type="password" class="form-control" id="contraseña">
+            <div id="warning" class="form-text mt-3"><h6>¿Aún no te has registrado?</h6><a href="registro.html">Presiona aqui</a></div>
+          </div>
+          <button type="submit" class="btn btn-primary mt-4">Iniciar sesion</button>
+        </form>
+        <p class="mt-3" id="loginMessage"></p>
+      </div>
+  </div> 
 
     <footer class="bg-secondary-emphasis text-center footer">
       <div class="text-center p-3 txt">

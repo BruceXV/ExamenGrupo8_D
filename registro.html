@@ -29,18 +29,8 @@
                             <a class="nav-link"  href="./paginainicio.html">Inicio </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./productos.html">Catálogo de juegos</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="./carrodecompras.html">Carro de compras</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="./contactanos.html">Contáctanos</a>
                         </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="./registro.html">Registrarse</a>
-                        </li>
-    
                     </ul>
                 </div>
             </div>
@@ -51,43 +41,34 @@
             </button>
         </div>
     </nav>
-
-    <div class="container">
-        <div class="formBox txt">
-            <h1>Registro nuevo usuario</h1>
-            <br>
-            <br>
-            <br>
-
-            <form id="formRegistro">
-                <div class="mb-3">
-                    <label for="rut" class="form-label">Rut usuario:</label>
-                    <input type="text" class="form-control" id="rut" placeholder="Ej:12345678-9">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container-fluid medio2">
+        <div class="row">
+          <form id="registroForm" class="mx-auto col-xs-6 col-sm-6 col-xl-3">
+              <h4 class="text-center">Registro</h4>
+              <div class="mb-3 mt-5">
+                  <label for="usuario" class="form-label"><p>Usuario :</p></label>
+                  <input type="text" class="form-control" id="usuario">
                 </div>
-                <div class="mb-3">
-                    <label for="nombre" class="form-label">Nombre usuario:</label>
-                    <input type="text" class="form-control" id="nombre" required>
-                </div>
-                <div class="mb-3">
-                    <label for="apellido" class="form-label">Apellido usuario:</label>
-                    <input type="text" class="form-control" id="apellido" required>
-                </div>
-                <div class="mb-3">
-                    <label for="correo" class="form-label">Direccion de correo:</label>
-                    <input type="text" class="form-control" id="correo" required>
-                </div>
-                <div class="mb-3">
-                    <label for="contraseña" class="form-label">Contraseña:</label>
-                    <input type="password" class="form-control" id="contraseña" required>
-                </div>
-                <div class="d-flex justify-content-center">
-                    <input type="submit" id="btnIngresar" value="Registrar" class="boton" href="./login.html">
-                </div>
-                <br>
-                <p id="error" style=" color: white; text-align: center;"></p>
+              <div class="mb-3">
+                <label for="correo" class="form-label"><p>Correo :</p></label>
+                <input type="email" class="form-control" id="correo">
+              </div>
+              <div class="mb-3">
+                <label for="correo" class="form-label"><p>Contraseña :</p></label>
+                <input type="password" class="form-control" id="contraseña">
+                <div id="warning" class="form-text mt-3"> <h6>¿Ya estás registrado?</h6> <br><a href="login.html">Clickea Aquí</a></div>
+              </div>
+              <button type="submit" class="btn btn-primary mt-4">Registrarse</button>
             </form>
-        </div>
-    </div>
+          </div>
+      </div>
+  
+  
 <br><br>
 
 <footer class="bg-secondary-emphasis text-center footer">

@@ -1,16 +1,39 @@
-document.getElementById("formLogin").addEventListener("submit",function(e){
-    e.preventDefault();
+document.getElementById('loginForm').addEventListener('submit',function(event){
 
-    const email = document.getElementById("correo").value;
+    event.preventDefault();
+
+    const email = document.querySelector('#correo').value;
+    const contraseña = document.querySelector('#contraseña').value;
+
+    const cuentas = JSON.parse(localStorage.getItem('usuarios')) || []
+
+    const validarUsuario = cuentas.find(cuenta => cuenta.email === email && cuenta.contraseña === contraseña);
+
+    if(!validarUsuario){
+        return alert('Usuario/Contraseña incorrectos');
+    }   
+    alert(`Bienvenido ${validarUsuario.nombre} !`);
+    localStorage.setItem('login_success', JSON.stringify(validarUsuario))
+    window.location.href = 'productos.html'
+   
     
-    var validacionEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+})
 
-    if (validacionEmail.test(email)){
-        alert("Exito")
-        window.location.href = ("productos.html")
-        
-    } else {
-        const errorMensaje = document.getElementById("error");
-        errorMensaje.textContent = 'Introduzca un correo valido'
-    }
-});
+const usuario = JSON.parse(localStorage.getItem('login_success')) || false;
+if (usuario) {
+    alert('Ya has iniciado sesion');
+    window.location.href = 'productos.html';
+}
+
+let username = document.getElementById('username').value;
+let password = document.getElementById('password').value;
+
+if (username==='usuario' && password ==='contraseña'){
+
+    localStorage.setItem('loggedIn',true);
+    window.location.href = 'productos.html';
+
+}else{
+
+    document.getElementById('loginMessage').textContent = 'Datos incorrectos. introduzca datos correctos.';
+}

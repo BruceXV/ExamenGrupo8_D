@@ -6,7 +6,7 @@
     <title>Catálogo de Juegos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/stylesNavBar.css">
-    <link rel="stylesheet" href="./assets/css/stylesinicio.css">
+    <link rel="stylesheet" href="./assets/css/stylesproductos.css">
 </head>
 <body>
 
@@ -39,6 +39,7 @@
                     <li class="nav-item">
                       <a class="nav-link" href="./registro.html">Registrarse</a>
                     </li>
+                    
 
                 </ul>
             </div>
@@ -61,105 +62,204 @@
         </div>
     </div>
 
-    <div class="row mb-5 d-flex justify-content-around">
-        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 mt-2">
-            <div class="card mx-auto" style="width: 18rem;">
-                <img src="/assets/img/shadowofwar.jpg" alt="..." height="200px" class="card-img-top">
-                <div class="card-body">
-                  <h2 class="card-title">Shadow of war</h2>
-                  <p class="card-text"> </p>
-                  <button onclick="window.location.href = 'ShadowOfWar.html';">Agregar al carrito de compras</button>
-                </div>
-              </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 mt-2">
-            <div class="card mx-auto" style="width: 18rem;">
-                <img src="/assets/img/theescapists.jpg"  alt="..." height="200px" class="card-img-top">
-                <div class="card-body">
-                  <h2 class="card-title">The Escapists</h2>
-                  <p class="card-text"></p>
-                  <button onclick="window.location.href = 'theEscapists.html';">Agregar al carrito de compras</button>
-                </div>
-              </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 mt-2">
-            <div class="card mx-auto" style="width: 18rem;">
-                <img src="/assets/img/lethalcompany.jpg" class="card-img-top" height="200px" alt="...">
-                <div class="card-body">
-                  <h2 class="card-title text-center">Lethal Company</h2>
-                  <p class="card-text"></p>
-                  <button onclick="window.location.href = 'LethalCompany.html';">Agregar al carrito de compras</button>
-                </div>
-              </div>
-        </div>
-    </div>
 
-    <div class="row mb-5 d-flex justify-content-around">
-      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 mt-2">
-          <div class="card mx-auto" style="width: 18rem;">
-              <img src="/assets/img/undertale.jpg" alt="..." height="200px" class="card-img-top">
-              <div class="card-body">
-                <h2 class="card-title">Undertale</h2>
-                <p class="card-text"> </p>
-                <button onclick="window.location.href = 'Undertale.html';">Agregar al carrito de compras</button>
+    <div class="container col-md-6 col-md-offset-8 " >
+      <div class="card mb-3 " style="max-width: 1000px;">
+          <div class="row g-2 vistaProducto">
+              <div class="col-md-4 vistaProducto ">
+                  <img src="/assets/img/shadowofwar.jpg" class="img-fluid rounded-start">
               </div>
-            </div>
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 mt-2">
-          <div class="card mx-auto" style="width: 18rem;">
-              <img src="/assets/img/xenoverse.jpg" alt="..." height="200px" class="card-img-top">
-              <div class="card-body">
-                <h2 class="card-title">Dragon ball Xenoverse</h2>
-                <p class="card-text"></p>
-                <button onclick="window.location.href = 'Xenoverse.html';">Agregar al carrito de compras</button>
+              <div class="col-md-8">
+                  <h5 class="card-title">Shadow of War</h5>
+                  <h1>Precio: <span class="precio">$19.555</span></h1>
+                  <p class="card-text"><small class="text-body-secondary">
+                    "Shadow of War" es un juego de acción y aventuras que continúa la historia de "Shadow of Mordor". Ambientado en el mundo de "El Señor de los Anillos",
+                     el jugador controla a Talion, un montaraz poseído por el espíritu de Celebrimbor, mientras luchan contra Sauron y su ejército de orcos en una épica
+                      batalla por el dominio de Mordor. Con un sistema único de Nemesis que crea enemigos persistentes y una mecánica de combate fluida, el juego ofrece
+                      una experiencia inmersiva en un vasto mundo abierto.</small></p>
+                  <div class="d-flex justify-content-left">
+                      <a class="btn btn-primary button add-to-cart" data-title="Shadow of war" data-price="19555">Añadir al carro</a>
+                  </div>
               </div>
-            </div>
+          </div>
       </div>
-      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 mt-2">
-          <div class="card mx-auto" style="width: 18rem;">
-              <img src="/assets/img/contentwarning.jpg" class="card-img-top" height="200px"  alt="...">
-              <div class="card-body">
-                <h2 class="card-title text-center">Content Warning</h2>
-                <p class="card-text"></p>
-                <button onclick="window.location.href = 'ContentWarning.html';">Agregar al carrito de compras</button>
+    <br>
+    <div class="container">
+      <div class="card mb-3" style="max-width: 1000px;">
+          <div class="row g-0 vistaProducto">
+              <div class="col-md-4 vistaProducto">
+                    <img src="/assets/img/theescapists.jpg" class="img-fluid rounded-start">
               </div>
-            </div>
+              <div class="col-md-8">
+                  <h5 class="card-title">The Escapists</h5>
+                  <h1>Precio: <span class="precio">$9.990</span></h1>
+                  <p class="card-text"><small class="text-body-secondary">
+                      "The Escapists" es un juego de estrategia y simulación de prisiones donde los jugadores asumen el papel de un recluso que intenta escapar de diferentes 
+                      prisiones. Deben planificar meticulosamente su fuga, evitando la seguridad y cumpliendo con la rutina diaria de la prisión. Con una combinación de crafting,
+                      sigilo y toma de decisiones, los jugadores pueden usar diferentes métodos para alcanzar la libertad mientras evitan ser capturados por los guardias.</small></p>
+                  <div class="d-flex justify-content-left">
+                      <a class="btn btn-primary button add-to-cart" data-title="The Escapists" data-price="9990">Añadir al carro</a>
+                  </div>
+              </div>
+          </div>
       </div>
-  </div>
-
-  <div class="row mb-5 d-flex justify-content-around">
-    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 mt-2">
-        <div class="card mx-auto" style="width: 18rem;">
-            <img src="/assets/img/left4dead2.jpg" alt="..." height="200px" class="card-img-top">
-            <div class="card-body">
-              <h2 class="card-title">Left 4 Dead 2</h2>
-              <p class="card-text"> </p>
-              <button onclick="window.location.href = 'Left4Dead2.html';">Agregar al carrito de compras</button>
+      <br>
+      <div class="container">
+        <div class="card mb-3" style="max-width: 1000px;">
+            <div class="row g-0 vistaProducto">
+                <div class="col-md-4 vistaProducto">
+                    <img src="/assets/img/lethalcompany.jpg" class="img-fluid rounded-start">
+                </div>
+                <div class="col-md-8">
+                    <h5 class="card-title">Lethal company</h5>
+                    <h1>Precio: <span class="precio">$6.999</span></h1>
+                    <p class="card-text"><small class="text-body-secondary">
+                      "Lethal Company" es un juego de estrategia en tiempo real que te pone al mando de una compañía militar mercenaria en un mundo futurista.
+                       Debes reclutar y entrenar soldados, gestionar recursos y participar en emocionantes batallas tácticas para cumplir con contratos lucrativos.
+                        Con un enfoque en la personalización de unidades y decisiones estratégicas, el juego ofrece una experiencia desafiante y llena de acción en
+                         un entorno de combate moderno.
+                    </small></p>
+                    <div class="d-flex justify-content-left">
+                        <a class="btn btn-primary button add-to-cart" data-title="Lethal Company" data-price="6990">Añadir al carro</a>
+                    </div>
+                </div>
             </div>
-          </div>
-    </div>
-    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 mt-2">
-        <div class="card mx-auto" style="width: 18rem;">
-            <img src="/assets/img/callofduty.jpg" alt="..." height="200px" class="card-img-top">
-            <div class="card-body">
-              <h2 class="card-title">Call Of Duty Warzone</h2>
-              <p class="card-text"></p>
-              <button onclick="window.location.href = 'CallOfDuty.html';">Agregar al carrito de compras</button>
-            </div>
-          </div>
-    </div>
-    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 mt-2">
-        <div class="card mx-auto" style="width: 18rem;">
-            <img src="/assets/img/starwars.jpg" class="card-img-top" height="200px" alt="...">
-            <div class="card-body">
-              <h2 class="card-title text-center">Star Wars Battlefront Classic Collection </h2>
-              <p class="card-text"></p>
-              <button onclick="window.location.href = 'StarWarsBattlefront.html';">Agregar al carrito de compras</button>
-            </div>
-          </div>
-    </div>
-</div>
-
+      </div> 
+        <br>
+        <div class="container">
+          <div class="card mb-3" style="max-width: 1000px;">
+              <div class="row g-0 vistaProducto">
+                  <div class="col-md-4 vistaProducto">
+                      <img src="/assets/img/undertale.jpg" class="img-fluid rounded-start">
+                  </div>
+                  <div class="col-md-8">
+                      <h5 class="card-title">Undertale</h5>
+                      <h1>Precio: <span class="precio">$7.990</span></h1>
+                      <p class="card-text"><small class="text-body-secondary">
+                        "Undertale" es un juego de rol independiente que mezcla elementos de juegos de rol clásicos con humor, narrativa única y
+                         decisiones morales significativas. El jugador controla a un niño humano que cae en un mundo subterráneo habitado por monstruos
+                          y debe explorar, interactuar y resolver acertijos para avanzar. Una de las características distintivas del juego es
+                           su sistema de combate, que permite a los jugadores optar por pacificar o combatir a los enemigos, con consecuencias
+                            significativas para la historia. Con personajes memorables, una banda sonora encantadora y múltiples finales, "Undertale"
+                             ofrece una experiencia emocionante y conmovedora que desafía las convenciones de los juegos de rol tradicionales.
+                      </small></p>
+                      <div class="d-flex justify-content-left">
+                          <a class="btn btn-primary button add-to-cart" data-title="Undertale" data-price="7990">Añadir al carro</a>
+                      </div>
+                  </div>
+              </div>
+          </div> 
+          <br>
+            <div class="container">
+              <div class="card mb-3" style="max-width: 1000px;">
+                  <div class="row g-0 vistaProducto">
+                      <div class="col-md-4 vistaProducto">
+                          <img src="/assets/img/xenoverse.jpg" class="img-fluid rounded-start">
+                      </div>
+                      <div class="col-md-8">
+                          <h5 class="card-title">Dragon ball Xenoverse</h5>
+                          <h1>Precio: <span class="precio">$21.990</span></h1>
+                          <p class="card-text"><small class="text-body-secondary">
+                            "Dragon Ball Xenoverse" es un juego de acción y lucha que permite a los jugadores sumergirse en el universo de
+                             Dragon Ball como un patrullero del tiempo. A través de viajes en el tiempo y la alteración de eventos históricos
+                              de la serie, los jugadores deben proteger la línea temporal de cambios malignos. Con la capacidad de crear un
+                               personaje personalizado y participar en batallas épicas con una variedad de técnicas de combate y transformaciones,
+                                el juego ofrece una experiencia emocionante para los fanáticos de Dragon Ball.</small></p>
+                          <div class="d-flex justify-content-left">
+                              <a class="btn btn-primary button add-to-cart" data-title="Dragon ball Xenoverse" data-price="21990">Añadir al carro</a>
+                          </div>
+                      </div>
+                  </div>
+              </div> 
+              <br>
+              <div class="container">
+                <div class="card mb-3" style="max-width: 1000px;">
+                    <div class="row g-0 vistaProducto">
+                        <div class="col-md-4 vistaProducto">
+                            <img src="/assets/img/contentwarning.jpg" class="img-fluid rounded-start">
+                        </div>
+                        <div class="col-md-8">
+                            <h5 class="card-title">Content Warning</h5>
+                            <h1>Precio: <span class="precio">$3.990</span></h1>
+                            <p class="card-text"><small class="text-body-secondary">
+                              "Content Warning" es un juego narrativo experimental que desafía las convenciones tradicionales al explorar temas sensibles y controvertidos.
+                               A través de una serie de escenarios interactivos, los jugadores se enfrentan a situaciones que pueden incluir contenido adulto, violencia
+                                o temas tabú, con el objetivo de reflexionar sobre la ética, la moralidad y la responsabilidad personal en diferentes contextos.
+                                 Con una narrativa ramificada y decisiones impactantes, "Content Warning" busca provocar pensamientos profundos y conversaciones
+                                  significativas sobre temas relevantes en la sociedad contemporánea.</small></p>
+                            <div class="d-flex justify-content-left">
+                                <a class="btn btn-primary button add-to-cart" data-title="Content Warning" data-price="3990">Añadir al carro</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <br>
+                <div class="container">
+                  <div class="card mb-3" style="max-width: 1000px;">
+                      <div class="row g-0 vistaProducto">
+                          <div class="col-md-4 vistaProducto">
+                              <img src="/assets/img/left4dead2.jpg" class="img-fluid rounded-start">
+                          </div>
+                          <div class="col-md-8">
+                              <h5 class="card-title">Left 4 Dead 2</h5>
+                              <h1>Precio: <span class="precio">$4.990</span></h1>
+                              <p class="card-text"><small class="text-body-secondary">
+                                "Left 4 Dead 2" es un juego de disparos en primera persona cooperativo que se desarrolla en un mundo post-apocalíptico infestado 
+                                de zombis. Los jugadores asumen el papel de supervivientes que luchan juntos para escapar de hordas de infectados mientras
+                                 avanzan a través de una variedad de escenarios. Con una jugabilidad frenética, diversos tipos de zombis y una amplia selección 
+                                 de armas, el juego ofrece una experiencia intensa y emocionante tanto en el modo cooperativo como en el competitivo.
+                              </small></p>
+                              <div class="d-flex justify-content-left">
+                                  <a class="btn btn-primary button add-to-cart" data-title="Left 4 Dead 2" data-price="4990">Añadir al carro</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div> 
+                  <br>
+                  <div class="container">
+                    <div class="card mb-3" style="max-width: 1000px;">
+                        <div class="row g-0 vistaProducto">
+                            <div class="col-md-4 vistaProducto">
+                                <img src="/assets/img/callofduty.jpg" class="img-fluid rounded-start">
+                            </div>
+                            <div class="col-md-8">
+                                <h5 class="card-title">Call Of Duty Warzone</h5>
+                                <h1>Precio: <span class="precio">$12.990</span></h1>
+                                <p class="card-text"><small class="text-body-secondary">
+                                  "Call of Duty: Warzone" es un juego de batalla real gratuito que ofrece una experiencia intensa de combate en línea para hasta 150 jugadores en un mapa masivo. 
+                                  Ambientado en el universo de "Call of Duty", los jugadores caen en paracaídas en un campo de batalla y compiten por ser el último en pie mientras se enfrentan a oponentes y luchan por la supervivencia. Con una combinación de mecánicas de juego táctico, acción trepidante
+                                   y una variedad de armas y equipo, "Warzone" ofrece una experiencia emocionante y competitiva tanto para jugadores casuales como para veteranos de la serie.
+                                </small></p>
+                                <div class="d-flex justify-content-left">
+                                    <a class="btn btn-primary button add-to-cart" data-title="Call Of Duty Warzone" data-price="12990">Añadir al carro</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div> 
+                  <br>
+                  <div class="container">
+                    <div class="card mb-3" style="max-width: 1000px;">
+                        <div class="row g-0 vistaProducto">
+                            <div class="col-md-4 vistaProducto">
+                                <img src="/assets/img/starwars.jpg" class="img-fluid rounded-start">
+                            </div>
+                            <div class="col-md-8">
+                                <h5 class="card-title">Star Wars Battlefront Classic Collection</h5>
+                                <h1>Precio: <span class="precio">$26.990</span></h1>
+                                <p class="card-text"><small class="text-body-secondary">
+                                  "Star Wars Battlefront Classic Collection" es una recopilación que incluye los dos primeros juegos
+                                   de la serie "Star Wars Battlefront": "Star Wars: Battlefront" (2004) y "Star Wars: Battlefront II" (2005).
+                                    Estos juegos ofrecen batallas multijugador intensas ambientadas en el universo de Star Wars, permitiendo a 
+                                    los jugadores luchar en icónicos escenarios de la saga como Hoth, Endor, Tatooine y más. Con una variedad
+                                     de modos de juego, desde combates terrestres hasta batallas espaciales, y la posibilidad de controlar 
+                                     héroes y villanos de Star Wars, esta colección proporciona una experiencia emocionante para los fans de la franquicia.
+                                </small></p>
+                                <div class="d-flex justify-content-left">
+                                    <a class="btn btn-primary button add-to-cart" data-title="Star Wars Battlefront Classic Collection" data-price="26990">Añadir al carro</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div> 
 
 <footer class="bg-secondary-emphasis text-center footer">
   <div class="text-center p-3 txt">
@@ -170,9 +270,14 @@
 </footer>
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-</script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous">
+    </script>
+<script src="./assets/js/carrodecompras.js"></script>
 
 </body>
 </html>
