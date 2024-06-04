@@ -1,4 +1,3 @@
-//paso 2
 
 const obtenerJuegos = async()=> {
     try{
@@ -93,7 +92,7 @@ obtenerJuegos()
 
 
 
-/*const llamarJuegos = () => {
+const llamarJuegos = () => {
 
     return new Promise((resolve, reject)=>{
 
@@ -122,4 +121,4 @@ llamarJuegos()
     })
     .catch((error)=>{
         console.log(`El error esta en :${error}`);
-    })*/
+    })
